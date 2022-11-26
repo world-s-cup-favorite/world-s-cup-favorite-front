@@ -10,14 +10,14 @@ import { Observable } from 'rxjs';
 })
 export class AppComponent implements OnInit {
   title = 'words-cup';
-  public countries$: Observable<CountryModel[]> | undefined;
-  constructor(private readonly cuontryService: CuontriesService) {}
+  // public countries$: Observable<CountryModel[]> | undefined;
+  // constructor(private readonly cuontryService: CuontriesService) {}
   ngOnInit(): void {
-    this.countries$ = this.cuontryService.getCoutries();
-    this.countries$.subscribe((countries) => {
-      console.log({
-        countries,
-      });
-    });
+    // this.countries$ = this.cuontryService.getCoutries();
+    // this.countries$.subscribe((countries) => {
+    //   console.log({
+    //     countries,
+    //   });
+    // });
   }
 }
