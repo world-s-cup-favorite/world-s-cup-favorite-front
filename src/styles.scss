@@ -1,8 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 :root {
   --primarycolor: #4462ed;
+  --secundcolor: #275cfc5b;
   --buttonHoverColor: #4463edb5;
-  --formFont-color: #2a2929;
+  --formFont-color: ;
 }
 html,
 body {
@@ -20,6 +21,7 @@ body {
     font-size: 25px;
     font-weight: bold;
     color: var(--formFont-color);
+
     & > label {
       margin-top: 15px;
     }
@@ -54,4 +56,10 @@ body {
   background-color: #cccccc;
   background-repeat: no-repeat, repeat;
   background-size: cover;
+}
+
+//*Container*/
+.container {
+  padding: auto;
+  margin: 1rem;
 }
