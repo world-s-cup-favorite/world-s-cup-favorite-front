@@ -1,1 +1,14 @@
-<p>grups works!</p>
+<H2>Matches</H2>
+<article class="card container " *ngFor="let coutry of countries$ |async">
+
+    <h6>{{coutry.name}}</h6>
+    <dl>
+        <dt> <img src="{{coutry.flag}}" loading="lazy" width="24px" height="17px">{{coutry.name}}</dt>
+        <dd> {{coutry.favoritePoint}}</dd>
+    </dl>
+    <dl>
+        <dt> <img src="{{coutry.flag}}" loading="lazy" width="24px" height="17px">{{coutry.name}}</dt>
+        <dd> {{coutry.favoritePoint}}</dd>
+    </dl>
+
+</article>
