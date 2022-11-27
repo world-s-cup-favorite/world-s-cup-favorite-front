@@ -1,0 +1,13 @@
+.card {
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  border-radius: solid;
+  padding: 1rem;
+  box-shadow: 3px 3px var(--secundcolor), -1em 0 0.4em var(--secundcolor);
+  & > dl {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 15px 0px 15px;
+  }
+}

@@ -14,7 +14,7 @@ const routes: Routes = [
         component: AllGamesComponent,
       },
       {
-        path: 'grou',
+        path: 'groups',
         component: AllGamesComponent,
       },
 
