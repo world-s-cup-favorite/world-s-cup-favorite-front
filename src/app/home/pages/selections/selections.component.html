@@ -1,5 +1,4 @@
 <H2>Selecciones</H2>
-<span class="card_opacity"></span>
 <article class="card  container " *ngFor="let coutry of countries$ |async">
     <h6>{{coutry.name}}</h6>
     <figure class="card_figure">
@@ -7,6 +6,7 @@
     </figure>
     <br>
     <dl>
+
         <dt>Games played </dt>
         <dd>{{coutry.gamesPlayed}}</dd>
         <dt>Games won </dt>
