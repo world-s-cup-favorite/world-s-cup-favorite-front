@@ -2,6 +2,8 @@
   width: 100%;
   height: 100vh;
   text-align: center;
+  position: relative;
+
   &_nav {
     height: 100px;
     display: flex;
@@ -24,5 +26,54 @@
   }
   &_main {
     width: 100%;
+  }
+}
+
+.form-popup {
+  position: absolute;
+  right: 15px;
+  border-radius: 5%;
+  z-index: 2;
+  border: 3px solid #f1f1f1;
+  box-shadow: inset 1em 1em var(--secundcolor);
+  background: var(--primarycolor);
+}
+
+.profile-card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: aliceblue;
+
+  & > img {
+    filter: invert(1.4);
+  }
+
+  & > hr {
+    width: 80%;
+  }
+  & > dl {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    font-size: 18px;
+    & > :first-child {
+      font-weight: bold;
+    }
+  }
+  & > button {
+    color: whitesmoke;
+    margin-top: 15px;
+    height: 47px;
+    width: 150px;
+    border-radius: 15px;
+    background-color: var(--secundcolor);
+    margin-bottom: 15px;
+    &:hover {
+      background-color: var(--buttonHoverColor);
+      cursor: pointer;
+    }
   }
 }
