@@ -1,0 +1,23 @@
+.profile-card {
+  & > dl {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    font-size: 18px;
+    & > :first-child {
+      font-weight: bold;
+    }
+  }
+  & > button {
+    color: whitesmoke;
+    margin-top: 15px;
+    height: 47px;
+    width: 150px;
+    border-radius: 15px;
+    background-color: var(--primarycolor);
+    &:hover {
+      background-color: var(--buttonHoverColor);
+      cursor: pointer;
+    }
+  }
+}
