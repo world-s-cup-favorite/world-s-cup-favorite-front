@@ -3,9 +3,32 @@
     <a routerLink="countries">Countries</a>
     <a routerLink="allGames">Matches</a>
     <a routerLink="groups">Groups</a>
-    <a routerLink="profile"><img src="../assets/auth.png" width="50px"></a>
+    <a (click)="openProfile()"><img src="../assets/auth.png" width="50px"></a>
 
 </nav>
+<section [style.display]="displayNow" class="form-popup ">
+    <article class="profile-card container">
+        <h2>Profile</h2>
+        <img src="../assets/auth.png" width="150px" height="150px">
+        <hr>
+        <dl>
+            <td>User Name</td>
+            <dd>Kravmaga</dd>
+        </dl>
+        <hr>
+        <dl>
+            <td>User Country</td>
+            <dd>KravmagCountry</dd>
+        </dl>
+        <hr>
+        <dl>
+            <td>User Email</td>
+            <dd>Kravmaga@Email</dd>
+        </dl>
+        <hr>
+        <button>Changue Profile</button>
+    </article>
+</section>
 <section class="container">
     <article class="home">
         <main class="home_main">

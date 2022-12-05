@@ -6,7 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
+  displayNow: string = 'none';
   constructor() {}
 
   ngOnInit(): void {}
+
+  openProfile() {
+    if (this.displayNow === 'none') {
+      this.displayNow = 'block';
+    } else {
+      this.displayNow = 'none';
+    }
+  }
 }
