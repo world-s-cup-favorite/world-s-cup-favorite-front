@@ -5,6 +5,7 @@ import { AllGamesComponent } from './pages/all-games/all-games.component';
 import { HomeComponent } from './home.component';
 import { SelectionsComponent } from './pages/selections/selections.component';
 import { GrupsComponent } from './pages/grups/grups.component';
+import { ProfileComponent } from './pages/profile/profile.component';
 
 const routes: Routes = [
   {
@@ -22,6 +23,10 @@ const routes: Routes = [
       {
         path: 'groups',
         component: GrupsComponent,
+      },
+      {
+        path: 'profile',
+        component: ProfileComponent,
       },
 
       {
