@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 :root {
   --primarycolor: #002efb;
+  --Primarycolorgrey: #002efb27;
   --secundcolor: #275cfc5b;
   --cardcolor: circle at 74.18% 116.45%, #0055ffa0 0, #0062ff 25%, #1800ff 50%,
     #0007ea 75%, #000dd6 100%;
@@ -22,6 +23,7 @@ body {
     flex-direction: column;
     font-size: 25px;
     font-weight: bold;
+
     color: var(--formFont-color);
 
     & > label {
